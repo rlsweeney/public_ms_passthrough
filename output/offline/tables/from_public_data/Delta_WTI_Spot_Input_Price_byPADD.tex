@@ -1,0 +1,26 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+                    &\multicolumn{1}{c}{EastCoast}&\multicolumn{1}{c}{Midwest}&\multicolumn{1}{c}{GulfCoast}&\multicolumn{1}{c}{RockyMountain}&\multicolumn{1}{c}{WestCoast}\\
+\midrule
+$\Delta WTISpot_t$  &        0.78\sym{***}&        0.79\sym{***}&        0.80\sym{***}&        0.87\sym{***}&        0.83\sym{***}\\
+                    &     (0.035)         &     (0.025)         &     (0.018)         &     (0.027)         &     (0.022)         \\
+$\Delta WTISpot_{t-1}$&        0.13\sym{***}&        0.19\sym{***}&        0.17\sym{***}&        0.12\sym{***}&        0.15\sym{***}\\
+                    &     (0.038)         &     (0.026)         &     (0.024)         &     (0.028)         &     (0.027)         \\
+$\Delta WTISpot_{t-2}$&      -0.040         &       0.035         &      0.0020         &     -0.0020         &     -0.0032         \\
+                    &     (0.036)         &     (0.024)         &     (0.019)         &     (0.026)         &     (0.022)         \\
+$\Delta WTISpot_{t-3}$&       0.053         &      -0.024         &     -0.0096         &      -0.053\sym{**} &      -0.025         \\
+                    &     (0.039)         &     (0.022)         &     (0.021)         &     (0.023)         &     (0.020)         \\
+$\Delta WTISpot_{t-4}$&      -0.056         &      -0.047\sym{*}  &      -0.032         &      -0.028         &      -0.019         \\
+                    &     (0.037)         &     (0.026)         &     (0.022)         &     (0.024)         &     (0.031)         \\
+Constant            &       0.043         &      0.0059         &       0.041         &     -0.0049         &       0.039         \\
+                    &      (0.19)         &      (0.13)         &      (0.10)         &      (0.15)         &      (0.12)         \\
+\midrule
+Observations        &         174         &         174         &         174         &         174         &         174         \\
+R-Squared           &        0.80         &        0.91         &        0.94         &        0.90         &        0.92         \\
+\bottomrule
+\multicolumn{6}{l}{\footnotesize Dependent variables are the average input costs for refineries, by PADD.}\\
+\end{tabular}
+}

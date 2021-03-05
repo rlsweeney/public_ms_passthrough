@@ -1,0 +1,25 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{Composite}&\multicolumn{1}{c}{Domestic}&\multicolumn{1}{c}{Imported}\\
+\midrule
+$\Delta WTISpot_t$  &        0.80\sym{***}&        0.76\sym{***}&        0.81\sym{***}\\
+                    &     (0.012)         &     (0.013)         &     (0.019)         \\
+$\Delta WTISpot_{t-1}$&        0.17\sym{***}&        0.22\sym{***}&        0.15\sym{***}\\
+                    &     (0.018)         &     (0.018)         &     (0.022)         \\
+$\Delta WTISpot_{t-2}$&      0.0046         &       0.019         &     -0.0020         \\
+                    &     (0.013)         &     (0.015)         &     (0.019)         \\
+$\Delta WTISpot_{t-3}$&      -0.016         &      -0.025\sym{**} &      -0.013         \\
+                    &     (0.014)         &     (0.011)         &     (0.019)         \\
+$\Delta WTISpot_{t-4}$&      -0.030\sym{*}  &       0.010         &      -0.054\sym{***}\\
+                    &     (0.015)         &     (0.016)         &     (0.020)         \\
+Constant            &       0.012         &       0.015         &      0.0033         \\
+                    &     (0.038)         &     (0.039)         &     (0.052)         \\
+\midrule
+Observations        &         387         &         387         &         387         \\
+R-Squared           &        0.96         &        0.96         &        0.93         \\
+\bottomrule
+\end{tabular}
+}

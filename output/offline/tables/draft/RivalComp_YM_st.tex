@@ -1,0 +1,25 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Own             &   0.0447***&   0.0485***&   0.0606** &   0.0704***\\
+                & (0.0133)   & (0.0134)   & (0.0255)   & (0.0252)   \\
+\addlinespace
+Rival           &    0.282***&    0.128***&    0.146***&   0.0357   \\
+                & (0.0164)   & (0.0214)   & (0.0299)   & (0.0387)   \\
+\addlinespace
+Fringe          &            &    0.159***&            &    0.112***\\
+                &            & (0.0220)   &            & (0.0357)   \\
+\addlinespace
+Brent Spot      &    0.625***&    0.617***&    0.732***&    0.722***\\
+                & (0.0113)   & (0.0101)   & (0.0124)   & (0.0105)   \\
+\midrule
+Rival Measure   &            &      Avg   &            &      Avg   \\
+IV              &            &            &      Yes   &      Yes   \\
+fstat           &            &            &     4651   &     3137   \\
+N               &    71570   &    71529   &    71570   &    71529   \\
+\bottomrule
+\end{tabular}
+}

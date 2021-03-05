@@ -1,0 +1,21 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\toprule
+                &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   \\
+\midrule
+Own             &   0.0284***&  0.00356   &   0.0138** & 0.000400   &   0.0116*  \\
+                &(0.00571)   &(0.00455)   &(0.00553)   &(0.00889)   &(0.00597)   \\
+\addlinespace
+Rival           &            &            &    0.181***&    1.063***&    0.240***\\
+                &            &            & (0.0183)   &(0.00893)   &(0.00790)   \\
+\addlinespace
+Brent Spot      &            &            &            &            &    0.781***\\
+                &            &            &            &            &(0.00584)   \\
+\midrule
+Time FE         &      MoS   &   MoS-St   &      MoS   &      Y,M   &      Y,M   \\
+N               &    65165   &    64929   &    65165   &    65165   &    65165   \\
+r2              &    0.988   &    0.994   &    0.988   &    0.965   &    0.972   \\
+\bottomrule
+\end{tabular}
+}

@@ -1,0 +1,29 @@
+**.directory
+**.lyx~
+**.lyx#
+*.out
+*.synctex.gz
+*.synctex
+*.aux
+*.bbl
+*.blg
+*.log
+*.nav
+*.toc
+**.fdb_latexmk
+**.fls
+**.bak
+**.sav
+
+# don't track the following folders
+temp
+generated_data
+
+# these come from endfloat
+**.fff
+**.lof
+**.lot
+**.ttt
+
+.vscode 
+kill_repo_history.bat 

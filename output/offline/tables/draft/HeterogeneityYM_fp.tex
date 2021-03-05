@@ -1,0 +1,29 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Own             &   0.0486   &   0.0368   &  -0.0433   &  -0.0822   \\
+                & (0.0400)   & (0.0369)   & (0.0624)   & (0.0677)   \\
+\addlinespace
+Own X Int       &  0.00100   &   0.0795   &    0.136   &    0.243***\\
+                & (0.0406)   & (0.0572)   & (0.0860)   & (0.0825)   \\
+\addlinespace
+Rival           &    0.285***&    0.306***&    0.238***&    0.309***\\
+                & (0.0444)   & (0.0402)   & (0.0741)   & (0.0810)   \\
+\addlinespace
+Rival X Int     & -0.00189   &   -0.105*  &   -0.137   &   -0.268***\\
+                & (0.0386)   & (0.0559)   & (0.0845)   & (0.0821)   \\
+\addlinespace
+Brent Spot      &    0.622***&    0.619***&    0.747***&    0.722***\\
+                & (0.0176)   & (0.0180)   & (0.0242)   & (0.0246)   \\
+\midrule
+Interaction     &      HHI   & Cap.PADD   &      HHI   & Cap.PADD   \\
+Time FE         &      Y,M   &      Y,M   &      Y,M   &      Y,M   \\
+IV              &            &            &      Yes   &      Yes   \\
+fstat           &            &            &      120   &      114   \\
+N               &     9169   &     9169   &     9169   &     9169   \\
+\bottomrule
+\end{tabular}
+}
